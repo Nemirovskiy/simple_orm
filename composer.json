@@ -1,5 +1,5 @@
 {
-    "name": "Nemirovskiy/simple_orm",
+    "name": "nemirovskiy/simple_orm",
     "description": "Simple PHP ORM library",
     "license": "MIT",
     "require": {
