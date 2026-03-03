@@ -1,0 +1,21 @@
+{
+    "name": "Nemirovskiy/simple_orm",
+    "description": "Simple PHP ORM library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "ext-pdo": "*",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nemirovskiy\\SimpleOrm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nikolas Nemirovskiy",
+            "email": "it-nikola@mail.ru"
+        }
+    ]
+}
