@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Db;
+namespace SimpleOrm\Db;
 
 use InvalidArgumentException;
 use PDOStatement;
@@ -12,7 +12,7 @@ use PDOStatement;
  */
 class QueryBuilder
 {
-    private DbConnection $connection;
+    private Connection $connection;
 
     private string $table = '';
 
@@ -31,7 +31,7 @@ class QueryBuilder
     private ?int $limit = null;
     private ?int $offset = null;
 
-    public function __construct(DbConnection $connection)
+    public function __construct(Connection $connection)
     {
         $this->connection = $connection;
     }

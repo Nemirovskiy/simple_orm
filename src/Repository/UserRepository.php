@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Repository;
+namespace SimpleOrm\Repository;
 
-use App\Db\DbConnection;
+use SimpleOrm\Db\Connection;
 
 class UserRepository extends BaseRepository
 {
@@ -12,7 +12,7 @@ class UserRepository extends BaseRepository
 
     protected string $primaryKey = 'ID';
 
-    public function __construct(DbConnection $connection)
+    public function __construct(Connection $connection)
     {
         parent::__construct($connection);
     }

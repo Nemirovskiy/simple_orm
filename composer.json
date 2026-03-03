@@ -3,13 +3,11 @@
     "description": "Simple PHP ORM library",
     "license": "MIT",
     "require": {
-        "php": ">=8.2",
-        "ext-pdo": "*",
-        "ext-curl": "*"
+        "php": ">=8.2"
     },
     "autoload": {
         "psr-4": {
-            "Nemirovskiy\\SimpleOrm\\": "src/"
+            "SimpleOrm\\": "src/"
         }
     },
     "authors": [

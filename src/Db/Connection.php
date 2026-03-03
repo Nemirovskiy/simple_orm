@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace App\Db;
+namespace SimpleOrm\Db;
 
 use PDO;
 use PDOException;
 use PDOStatement;
 
-class DbConnection
+class Connection
 {
     private PDO $pdo;
 

@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace App\Repository;
+namespace SimpleOrm\Repository;
 
-use App\Db\DbConnection;
-use App\Db\QueryBuilder;
+use SimpleOrm\Db\Connection;
+use SimpleOrm\Db\QueryBuilder;
 
 abstract class BaseRepository
 {
-    protected DbConnection $connection;
+    protected Connection $connection;
 
     protected string $tableName;
 
     protected string $primaryKey = 'ID';
 
-    public function __construct(DbConnection $connection)
+    public function __construct(Connection $connection)
     {
         $this->connection = $connection;
     }

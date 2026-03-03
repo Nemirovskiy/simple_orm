@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-use App\Db\DbConnection;
-use App\Repository\UserRepository;
+use SimpleOrm\Db\Connection;
+use SimpleOrm\Repository\UserRepository;
 
 require __DIR__ . '/../vendor/autoload.php';
 
 $dbConfig = require __DIR__ . '/../config/db.php';
 
-$connection = new DbConnection(
+$connection = new Connection(
     $dbConfig['dbname'] ?? '',
     $dbConfig['user'],
     $dbConfig['password'],
